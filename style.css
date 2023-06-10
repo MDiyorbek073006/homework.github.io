@@ -1,0 +1,139 @@
+* {
+    box-sizing: border-box;
+    outline: none;
+    margin: 0;
+    padding: 0;
+}
+body {
+    padding: 50px;
+}
+form {
+    display: flex;
+    gap: 50px;
+    margin-top: 50px;
+}
+form input {
+    font-size: 15px;
+    width: 250px;
+    height: 50px;
+    border: 1px solid rgb(208, 208, 208);
+    border-radius: 10px;
+    padding: 10px;
+}
+.wrapper {
+     position: relative;
+ }
+.wrapper label {
+    position: absolute;
+    top: -20px;
+    left: 0;
+    transform: translateY(-50%);
+    font-size: 20px;
+}
+form button {
+    width: 150px;
+    height: 50px;
+    border: none;
+    border-radius: 10px;
+    background-color: #06c;
+    color: white;
+    cursor: pointer;
+    font-size: 15px;
+}
+.container {
+    margin-top: 50px;
+}
+table {
+    width: 70%;
+}
+th {
+    opacity: 0.4;
+    text-align: start;
+}
+tr th,td {
+    padding: 10px;
+    font-size: 22px;
+}
+tr td {
+    border-top: 1px solid gainsboro;
+}
+
+.img_icon {
+    margin-left: 10px;
+    margin-right: 10px;
+    width: 25px;
+    height: 25px;
+    cursor: pointer;
+}
+.invalid {
+    border: 2px solid red;
+}
+.modal {
+    display: none;
+    scale: 0.1;
+    opacity: 0.2;
+    transition: 2s ease;
+
+    padding: 50px;
+    border-radius: 50px;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 20px;
+    position: absolute;
+    background-color: white;
+    width: 500px;
+    height: auto;
+}
+.modal-active {
+    transition: 2s ease;  
+    display: flex;
+    scale: 1;
+    opacity: 1;
+    
+}
+.bg {
+    transition: 2s ease;
+
+    opacity: 0.2;
+    align-items: center;
+    justify-content: center;
+    position: fixed;
+    top: 0;
+    right: 0;
+    left: 0;
+    display: none;
+    bottom: 0;
+    background-color: rgb(0, 0, 0, 0.2);
+}
+.bg-active { 
+    opacity: 1;
+    display: flex;
+    transition: 2s ease;
+}
+.modal_blur {
+    filter: blur(5px);
+}
+.modal input {
+    font-size: 15px;
+    width: 100%;
+    height: 50px;
+    border: 1px solid rgb(208, 208, 208);
+    border-radius: 10px;
+    padding: 10px;
+}
+.modal button {
+    width: 100%;
+    height: 50px;
+    border: none;
+    border-radius: 10px;
+    background-color: #06c;
+    color: white;
+    cursor: pointer;
+    font-size: 15px;
+}
+.modal div {
+    width: 100%;
+    display: flex;
+    gap: 20px;
+}
